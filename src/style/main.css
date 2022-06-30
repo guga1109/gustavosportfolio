@@ -1,0 +1,82 @@
+@import '../../node_modules/material-icons/iconfont/material-icons.css';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    background-color: rgb(65, 65, 65);
+    height: 100vh;
+}
+
+.sidebar {
+    box-shadow: -1px 0 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(50, 50, 50);
+    position: fixed;
+    height: 100%;
+    width: 70px;
+}
+
+.sidebar button {
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.sidebar button:hover {
+    cursor: pointer;
+}
+
+.sidebar span {
+    transition: all 0.7s;
+}
+
+.sidebar button:not(:first-child) {
+    margin-top: 50px;
+}
+
+.sidebar span:hover {
+    color: yellow;
+    transform: scale(1.3);
+}
+
+.main-content {
+    height: 100vh;
+    padding-left: 100px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column-6 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-big {
+    font-size: 48px;
+}

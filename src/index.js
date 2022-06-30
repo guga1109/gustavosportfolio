@@ -1,17 +1,26 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
+import './style/main.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const App = () => {
+    return (
+        <div>
+            <div className="sidebar">
+                <button><span class="material-icons">home</span></button>
+                <button><span class="material-icons">email</span></button>
+                <button><span class="material-icons">auto_stories</span></button>
+            </div>
+            <div className="main-content">
+                <div className="row full-height">
+                    <div className="column-6 justify-center text-white text-big">
+                        <p>Hi,</p>
+                        <p>I'm Gustavo and</p>
+                        <p>I am a full stack developer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(<App/>, document.getElementById("root"));
