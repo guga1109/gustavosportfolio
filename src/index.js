@@ -1,25 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Main from './layout/Main';
 import './style/main.css';
+import Home from './pages/Home';
+import Books from './pages/Books';
+import Contact from './pages/Contact';
 
 const App = () => {
     return (
-        <div>
-            <div className="sidebar">
-                <button><span class="material-icons">home</span></button>
-                <button><span class="material-icons">email</span></button>
-                <button><span class="material-icons">auto_stories</span></button>
-            </div>
-            <div className="main-content">
-                <div className="row full-height">
-                    <div className="column-6 justify-center text-white text-big">
-                        <p>Hi,</p>
-                        <p>I'm Gustavo and</p>
-                        <p>I am a full stack developer.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Main/>}>
+                    <Route index element={<Home/>}/>
+                    <Route path="books" element={<Books/>}/>
+                    <Route path="contact" element={<Contact/>}/>
+                </Route>
+            </Routes>
+        </BrowserRouter>
     );
 };
 

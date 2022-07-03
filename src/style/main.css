@@ -23,13 +23,13 @@
     width: 70px;
 }
 
-.sidebar button {
+.sidebar a {
     border: none;
     background-color: transparent;
     color: white;
 }
 
-.sidebar button:hover {
+.sidebar a:hover {
     cursor: pointer;
 }
 
@@ -37,11 +37,16 @@
     transition: all 0.7s;
 }
 
-.sidebar button:not(:first-child) {
+.sidebar a:not(:first-child) {
     margin-top: 50px;
 }
 
 .sidebar span:hover {
+    color: yellow;
+    transform: scale(1.3);
+}
+
+.sidebar a.active {
     color: yellow;
     transform: scale(1.3);
 }
