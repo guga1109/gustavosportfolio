@@ -10,7 +10,7 @@ import Contact from './pages/Contact';
 const App = () => {
     return (
         <BrowserRouter>
-            <Routes>
+            <Routes basename="gustavosportfolio">
                 <Route path="/" element={<Main/>}>
                     <Route index element={<Home/>}/>
                     <Route path="books" element={<Books/>}/>
