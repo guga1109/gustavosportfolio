@@ -1,0 +1,15 @@
+.typewriter .blink-bar {
+    animation:
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        color: transparent
+    }
+
+    50% {
+        color: white
+    }
+}
