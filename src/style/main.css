@@ -1,5 +1,6 @@
 @import '../../node_modules/material-icons/iconfont/material-icons.css';
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 * {
     box-sizing: border-box;
@@ -117,7 +118,12 @@
     text-align: justify;
 }
 
+.column-6 .book-box .content {
+    width: 70%;
+}
+
 .book-box .content .book-summary {
+    margin-top: 10px;
     overflow: hidden;
 }
 
@@ -172,33 +178,50 @@
     visibility: hidden;
 }
 
+.terminal {
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
 .window .top-bar {
     padding: 4px 10px 4px 10px;
     min-height: 20px;
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
     background-color: rgb(85, 85, 85);
     width: 100%;
 }
 
 .window .top-bar span {
-    font-size: 16px;
-    color: rgb(75, 76, 77);
+    font-size: 14px;
 }
 
 .window .top-bar button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     height: 16px;
     width: 16px;
     border: none;
     background-color: #FF605C;
-    cursor: pointer;
+    color: transparent;
+}
+
+.window .top-bar button:hover {
+    color: rgb(75, 75, 77);
 }
 
 .window .window-body {
+    overflow: scroll;
+    padding: 3px;
     height: 100%;
     width: 100%;
     background-color: rgb(47, 47, 47);
+}
+
+.window .window-body p {
+    word-break: break-all;
 }
