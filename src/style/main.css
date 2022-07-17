@@ -63,13 +63,22 @@
     flex-direction: row;
 }
 
+.width-transition {
+    transition: width 1s;
+}
+
 .column-6 {
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
 
-
+.column-12 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .justify-center {
@@ -101,8 +110,8 @@
 }
 
 .book-box .content {
-    max-width: 70%;
-    max-height: 100%;
+    width: 80%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     text-align: justify;
@@ -119,7 +128,7 @@
 
 .book-box .see-more {
     height: 130px;
-    width: 8%;
+    width: 4%;
 }
 
 .book-box .see-more button {
@@ -152,4 +161,44 @@
 
 .flex.justify-evenly {
     justify-content: space-evenly;
+}
+
+.padding-no-left {
+    padding: 12px 26px 12px 0;
+}
+
+.column-0 {
+    width: 0%;
+    visibility: hidden;
+}
+
+.window .top-bar {
+    padding: 4px 10px 4px 10px;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: rgb(85, 85, 85);
+    width: 100%;
+}
+
+.window .top-bar span {
+    font-size: 16px;
+    color: rgb(75, 76, 77);
+}
+
+.window .top-bar button {
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+    border: none;
+    background-color: #FF605C;
+    cursor: pointer;
+}
+
+.window .window-body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(47, 47, 47);
 }
