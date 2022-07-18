@@ -24,3 +24,11 @@ gittoken.txt
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+/dist/c911a7b0342c0bb89581ead21de57961.jpeg
+/.idea/*
