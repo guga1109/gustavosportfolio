@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createRoot } from 'react-dom/client';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import {createRoot} from 'react-dom/client';
+import {HashRouter, Route, Routes} from 'react-router-dom';
 import Main from './layout/Main';
 import './style/main.css';
 import Home from './pages/Home';
 import Books from './pages/Books';
 import Contact from './pages/Contact';
+import Games from "./pages/Games";
 
 const App = () => {
     return (
@@ -16,6 +17,7 @@ const App = () => {
                     <Route index element={<Home/>}/>
                     <Route path="books" element={<Books/>}/>
                     <Route path="contact" element={<Contact/>}/>
+                    <Route path="games" element={<Games/>}/>
                 </Route>
             </Routes>
         </HashRouter>
