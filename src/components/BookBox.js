@@ -1,8 +1,8 @@
 import React from "react";
 
-const BookBox = ({book, seeBookInfo, isbn}) => {
+const BookBox = ({book, seeBookInfo, isbn, activeBook}) => {
     return (
-        <div className="book-box" key={isbn}>
+        <div className={`book-box mb-1 ${activeBook ? "active-book" : ""}`} key={isbn}>
             <div className="book-image">
                 <img src={book.image}/>
             </div>

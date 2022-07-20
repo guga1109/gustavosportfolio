@@ -82,6 +82,14 @@
     align-items: flex-start;
 }
 
+.overflow-y-scroll {
+    overflow-y: scroll;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
 .justify-center {
     justify-content: center;
 }
@@ -226,4 +234,8 @@
 
 .window .window-body p {
     word-break: break-all;
+}
+
+.active-book {
+    background-color: rgb(168, 168, 166);
 }
