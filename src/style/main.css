@@ -1,6 +1,6 @@
 @import '../../node_modules/material-icons/iconfont/material-icons.css';
-@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
 
 * {
     box-sizing: border-box;
@@ -11,7 +11,7 @@
 #root {
     background-color: rgb(65, 65, 65);
     height: 100vh;
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .sidebar {
@@ -238,4 +238,10 @@
 
 .active-book {
     background-color: #6f6f6f;
+}
+
+@media (min-width: 920px) {
+    .column-6, .column-12 {
+        justify-content: center;
+    }
 }

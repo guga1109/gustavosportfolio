@@ -43,3 +43,11 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 960px) {
+    .contact-box {
+        flex-direction: column;
+        height: 400px;
+        max-width: 20%;
+    }
+}
