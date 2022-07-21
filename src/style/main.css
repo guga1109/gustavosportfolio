@@ -240,7 +240,7 @@
     background-color: #6f6f6f;
 }
 
-@media (min-width: 920px) {
+@media (min-height: 740px) {
     .column-6, .column-12 {
         justify-content: center;
     }
