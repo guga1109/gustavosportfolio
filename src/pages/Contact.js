@@ -11,7 +11,7 @@ const Contact = () => {
                 <a target="_blank" id="github" href="https://github.com/guga1109"><FontAwesomeIcon
                     icon={faGithubSquare}/></a>
                 <a target="_blank" id="linkedin"
-                   href="https://www.linkedin.com/in/gustavo-bevilacqua-7130aa186/"><FontAwesomeIcon icon={faLinkedin}/></a>
+                   href="https://www.linkedin.com/in/gustavo-bevilacqua-7130aa186"><FontAwesomeIcon icon={faLinkedin}/></a>
                 <a target="_blank" id="email" href="mailto:gustavocbevilacqua@gmail.com"><FontAwesomeIcon
                     icon={faEnvelopeSquare}/></a>
             </div>

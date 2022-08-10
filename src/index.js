@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Books from './pages/Books';
 import Contact from './pages/Contact';
 import Games from "./pages/Games";
+import Quotes from "./pages/Quotes";
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
                     <Route path="books" element={<Books/>}/>
                     <Route path="contact" element={<Contact/>}/>
                     <Route path="games" element={<Games/>}/>
+                    <Route path="quotes" element={<Quotes/>}/>
                 </Route>
             </Routes>
         </HashRouter>
